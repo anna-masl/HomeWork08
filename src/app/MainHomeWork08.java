@@ -28,7 +28,8 @@ public class MainHomeWork08 {
         System.out.print("Введіть число для пошуку: ");
         int inputnumber = sc.nextInt();
         int key = Arrays.binarySearch(array,inputnumber);
-        System.out.print(" Індекс числа " + inputnumber + " у відсортованому масиві: " + key);
-
+        if (key < 0){
+            System.out.println("числа немає");
+        } else System.out.print("Індекс числа " + inputnumber + " у відсортованому масиві: " + key);
     }
 }
